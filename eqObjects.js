@@ -26,7 +26,8 @@ const eqObjects = function(object1, object2) {
     //key is the key of the object, object1[key] is the value, comparing the value of the same key
 
     //make sure it is an array, then loop each key in one object to ensure that same key in the other object
-
+    return false;
+  } else {
     for (let i in object1) {
       if (Array.isArray(object1[i]) && Array.isArray(object2[i])) {
         if (!eqArrays(object1[i], object2[i])) {
@@ -36,7 +37,6 @@ const eqObjects = function(object1, object2) {
     }
     return true;
   }
-  return false;
 };
 
 const ab = { a: "1", b: "2"};
