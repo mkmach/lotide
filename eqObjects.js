@@ -41,7 +41,7 @@ const eqObjects = function(object1, object2) {
 
 const ab = { a: "1", b: "2"};
 const ba = { b: "2", a: "1"};
-console.log(assertEqual(eqObjects(ab,ba),false));
+console.log(assertEqual(eqObjects(ab,ba),true));
 const abc = { a: "1", b: "2", c: "3"};
 console.log(assertEqual(eqObjects(ab,abc),false));
 const cd = { c: "1", d: ["2", 3] };
