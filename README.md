@@ -14,6 +14,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 `const results = _.tail([1, 2, 3]) // => [2, 3]`
 
+**Test it**
+
+`the lotide scripts have zero dependencies, but can be unit tested with node.js integration.
+* run `mocha`
+
 ## Documentation
 
 The following functions are currently implemented:
